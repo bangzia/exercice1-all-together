@@ -5,7 +5,11 @@ const ListUsers = props => {
   return (
     <div>
       <p>List of users</p>
-      <ol>{props.users.map((user,index)=><User key={index} user={user}/>)}<ol/>
+      <ol>
+        {props.users.map((user, index) => (
+          <User key={index} user={user} />
+        ))}
+      </ol>
     </div>
   );
 };
