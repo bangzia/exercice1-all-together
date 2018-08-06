@@ -21,8 +21,20 @@ class CreateUser extends Component {
         <form onSubmit={this.addUser}>
           <input
             type="text"
-            placeholder="First name"
+            placeholder="first name"
             value={this.state.firstName}
+            onChange={this.handleChange}
+          />
+          <input
+            type="text"
+            placeholder="last name"
+            value={this.state.lastName}
+            onChange={this.handleChange}
+          />
+          <input
+            type="text"
+            placeholder="userName"
+            value={this.state.userName}
             onChange={this.handleChange}
           />
           <button disabled={this.inputIsEmpty()}>Add</button>

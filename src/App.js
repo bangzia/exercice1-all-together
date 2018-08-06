@@ -18,7 +18,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <h2>Users</h2>
+        <h2>Create User</h2>
         <CreateUser onAddUser={this.handleAddUser} />
       </div>
     );
